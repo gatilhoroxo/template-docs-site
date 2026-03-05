@@ -1,0 +1,22 @@
+# vscode stuff
+.vscode/
+# tmp files
+*.tmp
+*.log
+
+# ruby stuff
+*.gem
+*.rbc
+.bundle
+vendor/bundle
+vendor/cache
+vendor/gems
+vendor/ruby
+Gemfile.lock
+
+# jekyll stuff
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+

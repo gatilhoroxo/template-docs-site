@@ -1,0 +1,60 @@
+title: Template de Site de Documentação
+description: O que deveria ser um site de documentação... eu acho
+
+
+baseurl: "/tp-docs-site" 
+
+# where things are
+source: .
+includes_dir: src/_includes
+layouts_dir: src/_layouts
+data_dir: src/_data
+plugins_dir: src/_plugins
+collections_dir: content
+collections:
+  post:
+    output: true
+  projects:
+    output: true
+sass:
+  sass_dir: src/_sass
+  style: compressed
+
+# handling reading
+safe: false
+include: []
+exclude: ["readme.md", "Gemfile", "docs"]
+keep_files: [".git", "assets"]
+
+# plugins
+plugins: [jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
+
+# conversion
+markdown: kramdown
+
+# outpuring
+permalink: pretty
+timezone: null
+
+# markdown processor
+kramdown:
+  input: GFM
+  auto_id: true
+  syntax_highlighter: rouge
+
+#default values
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

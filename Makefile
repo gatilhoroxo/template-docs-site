@@ -1,4 +1,4 @@
-.PHONY: dev,build
+.PHONY: dev,build,clean
 
 dev: 
 	bundle exec jekyll serve
@@ -6,3 +6,5 @@ dev:
 build: 
 	bundle exec jekyll build
 
+clean:
+	rm -rf _site .jekyll-cache .jekyll-metadata

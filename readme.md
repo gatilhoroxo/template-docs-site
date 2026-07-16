@@ -14,4 +14,16 @@ sudo apt install ruby-dev
 sudo snap install ruby --classic
 gem install jekyll
 sudo apt install git
+
+# instalando dependências
+bundle install
+```
+
+## Rodando localmente
+
+```sh
+# o servidor de desenvolvimento
+bundle exec jekyll serve
+# ou com o makefile
+make dev
 ```
